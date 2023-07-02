@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const http = require('http');
+const express = require('express');
+const NeopixelSerialBindicators = require('../lib/neopixelserialbindicators.js');
+
+
+const PORT = process.env.PORT || 3001;
+
+
+let app = express();
+app.use(express.json());
+
+let server = http.createServer(app);
+server.listen(PORT, () => {
+  console.log('neopixel-serial-bindicators instance is listening on port', PORT);
+});
+
+const options = { app: app };
+
+let bindicators = new NeopixelSerialBindicators(options);
