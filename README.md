@@ -64,6 +64,32 @@ Update the strips to indicate one or more bins with specific LED settings.
 To turn off all LEDs, PUT /bindicators with an empty array (`[]`).
 
 
+Configuration Files
+-------------------
+
+On startup, __neopixel-serial-bindicators__ will load all relevant files in the /config directory.
+
+### strips-x.csv
+
+The strips-x.csv files define the association of a chain of strips with the cart(s)/shelves/bins it serves to indicate.  The 'x' represents the id of the chain of strips with reference to the microcontroller (ex: strips-0.csv).
+
+The first line of the file is ignored, and therefore typically used as a header defining each column to facilitate manual editing.  The second line, and all subsequent lines, are read into the configuration, each representing a specific shelf, and observe the following column ordering:
+
+| Column | Title         | Description                                        |
+|:-------|:--------------|:---------------------------------------------------|
+| 1      | "cartName"    | String identifying the cart (ex: "1")              |
+| 2      | "shelfId"     | Positive integer defining the shelf (ex: 2)        |
+| 3      | "shelfWidth"  | Width of the shelf in mm (ex: 1000)                |
+| 4      | "stripOffset" | Offset of the first LED of this shelf (ex: 0)      |
+| 5      | "stripLength" | Number of LEDs associated with this shelf (ex: 60) |
+| 6      | "isReverse"   | true if strip goes left-to-right, false otherwise  |
+| 7      | "bin(1)"      | Offset in mm from the start of the shelf to the start of the first bin (ex: 0) |
+| 7+n-1  | "bin(n)"      | Offset in mm from the start of the shelf to the start of the n-th bin (ex: 920) |
+
+The line corresponding with the table above is as follows:
+    "1",2,1000,0,60,true,0,...,920
+
+
 Serial Protocol
 ---------------
 
