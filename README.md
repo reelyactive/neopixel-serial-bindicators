@@ -54,7 +54,7 @@ Update the strips to indicate one or more bins with specific LED settings.
       },
       "_links": {
         "self": {
-          "href": "http://localhost:3001/bindicators/"
+          "href": "http://localhost:3000/bindicators/"
         }
       }
     }
