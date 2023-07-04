@@ -3,8 +3,8 @@ Description=neopixel-serial-bindicators for CSL CS463 reader
 After=network.target
 
 [Service]
-WorkingDirectory=/home/reelyactive/neopixel-serial-bindicators/bin
-ExecStart=/usr/local/bin/node neopixel-serial-bindicators
+WorkingDirectory=/home/reelyactive/neopixel-serial-bindicators
+ExecStart=/usr/local/bin/node bin/neopixel-serial-bindicators
 Restart=on-failure
 User=reelyactive
 
