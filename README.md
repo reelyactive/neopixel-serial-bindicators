@@ -19,9 +19,10 @@ Microcontrollers
 
 The following microcontrollers are supported, with code provided:
 
-| Microcontroller (and shield)   | Code (in /microcontrollers folder) |
-|:-------------------------------|:-----------------------------------|
-| Arduino Nano with Grove shield | arduino-nano.ino                   |
+| Microcontroller (and shield)    | Code (in /microcontrollers folder)  |
+|:--------------------------------|:------------------------------------|
+| Arduino Nano with Grove shield  | arduino-nano.ino                    |
+| Adafruit Feather RP2040 SCORPIO | adafruit-feather-rp2040-scorpio.ino |
 
 
 REST API
