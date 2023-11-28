@@ -73,7 +73,7 @@ void handleSerialMessage() {
         case 0x06: // Strip 6
         case 0x07: // Strip 7
           if(stripOffset < NUM_LEDS) {
-            uint8_t matrixOffset = message[0] * NUM_LEDS;
+            uint16_t matrixOffset = (message[0] * NUM_LEDS) + stripOffset;
             uint32_t color = leds.Color(message[3], message[4], message[5]);
             leds.setPixelColor(matrixOffset, color);
           }
