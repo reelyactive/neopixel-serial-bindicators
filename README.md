@@ -25,6 +25,12 @@ The following microcontrollers are supported, with code provided:
 | Adafruit Feather RP2040 SCORPIO | adafruit-feather-rp2040-scorpio.ino |
 
 
+Example Circuit
+---------------
+
+![neopixel-serial-bindicators Adafruit Feather RP2040 SCORPIO 4-strip circuit](https://reelyactive.github.io/neopixel-serial-bindicators/images/scorpio-4-circuit.png)
+
+
 REST API
 --------
 
