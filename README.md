@@ -24,6 +24,10 @@ The following microcontrollers are supported, with code provided:
 | Arduino Nano with Grove shield  | arduino-nano.ino                    |
 | Adafruit Feather RP2040 SCORPIO | adafruit-feather-rp2040-scorpio.ino |
 
+Program each microcontroller using the Arduino IDE.
+
+To get set up with the Adafruit Feather RP2040 SCORPIO, follow the [Arduino IDE Setup tutorial](https://learn.adafruit.com/introducing-feather-rp2040-scorpio/arduino-ide-setup) and the [Adafruit_NeoPXL8 library installation](https://learn.adafruit.com/introducing-feather-rp2040-scorpio/adafruit_neopxl8) tutorial. 
+
 
 Example Circuit
 ---------------
