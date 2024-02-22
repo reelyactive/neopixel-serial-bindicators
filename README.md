@@ -26,7 +26,7 @@ The following microcontrollers are supported, with code provided:
 
 Program each microcontroller using the Arduino IDE.
 
-To get set up with the Adafruit Feather RP2040 SCORPIO, follow the [Arduino IDE Setup tutorial](https://learn.adafruit.com/introducing-feather-rp2040-scorpio/arduino-ide-setup) and the [Adafruit_NeoPXL8 library installation](https://learn.adafruit.com/introducing-feather-rp2040-scorpio/adafruit_neopxl8) tutorial. 
+To get set up with the Adafruit Feather RP2040 SCORPIO, follow the [Arduino IDE Setup tutorial](https://learn.adafruit.com/introducing-feather-rp2040-scorpio/arduino-ide-setup) and the [Adafruit_NeoPXL8 library installation](https://learn.adafruit.com/introducing-feather-rp2040-scorpio/adafruit_neopxl8) tutorial.  Then program the board with the [adafruit-feather-rp2040-scorpio.ino](microcontrollers/adafruit-feather-rp2040-scorpio.ino) file from the Arduino IDE. 
 
 
 Example Circuit
